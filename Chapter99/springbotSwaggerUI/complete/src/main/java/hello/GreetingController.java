@@ -22,6 +22,8 @@ public class GreetingController {
     @ApiImplicitParams({
             @ApiImplicitParam(name = "name", value = "User's name", required = false, dataType = "string", paramType = "query", defaultValue="Niklas")
     })
+
+
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Success", response = Greeting.class),
             @ApiResponse(code = 401, message = "Unauthorized"),
